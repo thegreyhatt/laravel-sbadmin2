@@ -8,6 +8,12 @@
             "email": "ervinbenez@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            // "JeroenNoten\\LaravelAdminLte\\": "src/"
+            "Thegreyhatt\\LaravelSBAdmin2\\": "packages/thegreyhatt/laravel-sbadmin2"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
