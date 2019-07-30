@@ -10,7 +10,6 @@
     ],
     "autoload": {
         "psr-4": {
-            // "JeroenNoten\\LaravelAdminLte\\": "src/"
             "Thegreyhatt\\LaravelSBAdmin2\\": "packages/thegreyhatt/laravel-sbadmin2"
         }
     },
