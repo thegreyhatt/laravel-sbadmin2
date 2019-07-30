@@ -1,0 +1,13 @@
+{
+    "name": "thegreyhatt/laravel-sbadmin2",
+    "description": "Start Bootstrap Admin 2 Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ervinbenez",
+            "email": "ervinbenez@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
