@@ -13,8 +13,10 @@ class LaravelSBAdmin2ServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
-        $this->loadViewsFrom(__DIR__.'/views', 'sbadmin2');
+
+        $viewsPath = $this->packagePath('resources/views');
+        $this->loadViewsFrom($viewsPath, 'sbadmin2');
+
     }
 
     /**
@@ -25,5 +27,10 @@ class LaravelSBAdmin2ServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+    }
+
+    private function packagePath($path)
+    {
+        return __DIR__."/../$path";
     }
 }
