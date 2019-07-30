@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Thegreyhatt\\LaravelSBAdmin2\\": "packages/thegreyhatt/laravel-sbadmin2"
+            "Thegreyhatt\\LaravelSBAdmin2\\": "src"
         }
     },
     "minimum-stability": "dev",
