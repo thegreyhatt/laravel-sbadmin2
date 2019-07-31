@@ -26,7 +26,25 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishAssets();
+    }
+
+    private function loadViews()
+    {
+        $viewsPath = $this->packagePath('resources/views');
+
+        $this->loadViewsFrom($viewsPath, 'adminlte');
+
+        $this->publishes([
+            $viewsPath => base_path('resources/views/vendor/sbadmin2'),
+        ], 'views');
+    }
+
+    private function publishAssets()
+    {
+        $this->publishes([
+            $this->packagePath('resources/assets') => public_path('vendor/sbadmin2'),
+        ], 'assets');
     }
 
     private function packagePath($path)
