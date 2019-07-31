@@ -9,7 +9,11 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>{{ config('app.name') }}</title>
+  <title>
+    @yield('title_prefix', config('sbadmin2.title_prefix', ''))
+    @yield('title', config('sbadmin2.title', 'SBAdmin 2'))
+    @yield('title_postfix', config('sbadmin2.title_postfix', ''))
+  </title>
 
   <!-- Custom fonts for this template-->
   <link href="{{ asset('vendor/sbadmin2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -17,6 +21,8 @@
 
   <!-- Custom styles for this template-->
   <link href="{{ asset('vendor/sbadmin2/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+  @yield('sbadmin2_css')
 
 </head>
 
@@ -59,6 +65,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{ asset('vendor/sbadmin2/js/sb-admin-2.min.js') }}"></script>
+  
+  @yield('sbadmin2_js')
 
 </body>
 

@@ -15,6 +15,7 @@ class ServiceProvider extends BaseServiceProvider
     {
 
         $viewsPath = $this->packagePath('resources/views');
+
         $this->loadViewsFrom($viewsPath, 'sbadmin2');
 
     }
@@ -26,7 +27,12 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
+        $this->loadViews();
+
+        $this->publishConfig();
+
         $this->publishAssets();
+        
     }
 
     private function loadViews()
@@ -39,6 +45,18 @@ class ServiceProvider extends BaseServiceProvider
             $viewsPath => base_path('resources/views/vendor/sbadmin2'),
         ], 'views');
     }
+
+    private function publishConfig()
+    {
+        $configPath = $this->packagePath('config/sbadmin2.php');
+
+        $this->publishes([
+            $configPath => config_path('sbadmin2.php'),
+        ], 'config');
+
+        $this->mergeConfigFrom($configPath, 'sbadmin2');
+    }
+
 
     private function publishAssets()
     {

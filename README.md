@@ -1,4 +1,4 @@
-# Start Bootstrap Admin 2 - Laravel Integration
+# Start Bootstrap Admin 2 integration with Laravel 5
 
 ## 1. Installation
 
