@@ -1,11 +1,5 @@
 # Start Bootstrap Admin 2 - Laravel Integration
 
-### Installation
-
-Run
-Then, add the service provider to `config/app.php`
-
-
 ## 1. Installation
 
 1. Require the package using composer:
