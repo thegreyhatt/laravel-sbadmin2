@@ -95,22 +95,22 @@ return [
     			'Other Pages:',
     			[
     				'text'	=>	'404 Page',
-    				'url'	=>	''
+    				'url'	=>	'#'
     			],
     			[
     				'text'	=>	'Blank Page',
-    				'url'	=>	''
+    				'url'	=>	'#'
     			],
     		],
     	],
     	[
     		'text'	=>	'Charts',
-    		'url'	=>	'/charts',
+    		'url'	=>	'#',
     		'icon'	=>	'fa-chart-area',
     	],
     	[
     		'text'	=>	'Tables',
-    		'url'	=>	'/tables',
+    		'url'	=>	'#',
     		'icon'	=>	'fa-table',
     	],
     ],

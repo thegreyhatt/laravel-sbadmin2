@@ -1,3 +1,9 @@
+@php
+	echo url()->current();
+	echo isset($item['url'])? $item['url'] : '#';
+@endphp
+
+
 @if (is_string($item))
 
     <hr class="sidebar-divider">
